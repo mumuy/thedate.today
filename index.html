@@ -3037,7 +3037,6 @@
             </footer>
         </div>
         <script type="text/javascript" src="https://jquerywidget.com/public/script/jquery.min.js"></script>
-        <script type="text/javascript" src="https://passer-by.com/calendar/dist/calendar.min.js"></script>
         <script type="text/javascript" src="https://passer-by.com/datex/dist/datex.min.js"></script>
         <script type="text/javascript">
             let $mod_panel = $('.mod-panel');
@@ -3056,7 +3055,6 @@
                     $current = $mod_panel.find('.current');
                     let datex_item = datex();
                     let days = datex_item.diffWith(datex_item.startOf('year')).get('day');
-                    let today = calendar.getToday();
                     $current.find('.time').text(datex_item.format('HH:mm:ss'));
                     $current.find('.date').html(`
                         <p>${datex_item.format('WWW, D MMMM YYYY')}</p>
@@ -3127,7 +3125,7 @@
                 });
             })();
         </script>
-        <script async defer src="https://cdn.bootcdn.net/ajax/libs/github-buttons/2.21.1/buttons.min.js"></script>
-        <script type="text/javascript" src="https://passer-by.com/public/script/stat.js"></script>
+        <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script>LA.init({id:"3Ko6Ku9TQDUX3R7N",ck:"3Ko6Ku9TQDUX3R7N"})</script>
     </body>
 </html>
